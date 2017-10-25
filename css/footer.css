@@ -1,0 +1,105 @@
+p{
+	margin: 0;
+}
+h2{
+	margin: 0;
+}
+.footBox {
+    height: 347px;
+    width: 100%;
+    border-top: 3px solid #89bc43;
+    background-repeat: repeat;
+}
+.auto {
+    margin: 0 auto;
+}
+.foot {
+    width: 1002px;
+    height: 323px;
+    background: pink;
+    color: #fff;
+    padding-top: 24px;
+}
+.clear {
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.footleft {
+    width: 684px;
+    height: 323px;
+    font: 15px bolder "微软雅黑";
+}
+.footright {
+    width: 288px;
+    height: 323px;
+    padding-left: 30px;
+}
+.fr {
+    float: right;
+}
+.shareus {
+    height: 22px;
+}
+.foot a {
+    color: #fff;
+	
+}
+.shareus img {
+    height: 22px;
+    padding-left: 15px;
+    display: block;
+}
+
+.bshare-custom {
+    font-size: 13px;
+    line-height: 16px !important;
+}
+.footdh {
+    width: 684px;
+    height: 231px;
+    clear: both;
+    text-align: left;
+}
+.footdh1 h2 {
+    font: 14px bolder "微软雅黑";
+    display: block;
+    height: 62px;
+    line-height: 64px;
+    font-size: 18px;
+}
+.footdh1 {
+    width: 114px;
+    height: 231px;
+}
+.footdh1 ul {
+    height: 120px;
+    width: 114px;
+}
+.banquan {
+    width: 684px;
+    height: 50px;
+    font: 12px normal "宋体";
+    font-size: 12px;
+}
+.footdh1 ul li {
+    height: 20px;
+    line-height: 20px;
+    font: 12px normal "宋体";
+    font-size: 14px;
+}
+.banquan p {
+    height: 20px;
+    line-height: 20px;
+}
+.footright {
+    width: 288px;
+    height: 323px;
+    padding-left: 30px;
+}
+.footright h2 {
+    height: 65px;
+    font: 14px normal "微软雅黑";
+}
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ESD</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+<!-- header开始	 -->
+	<div class="ftool auto">
+		<div class="tool auto" style="background: url(img/header/toolbj.jpg) 825px top no-repeat;">
+			<a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a> &nbsp;.&nbsp;<a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+			<script type="text/javascript" language="javascript">
+			 
+			    //加入收藏
+			 
+			        function AddFavorite(sURL, sTitle) {
+			 
+			            sURL = encodeURI(sURL); 
+			        try{   
+			 
+			            window.external.addFavorite(sURL, sTitle);   
+			 
+			        }catch(e) {   
+			 
+			            try{   
+			 
+			                window.sidebar.addPanel(sTitle, sURL, "");   
+			 
+			            }catch (e) {   
+			 
+			                alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+			 
+			            }   
+			 
+			        }
+			 
+			    }
+			 
+			    //设为首页
+			 
+			    function SetHome(url){
+			 
+			        if (document.all) {
+			 
+			            document.body.style.behavior='url(#default#homepage)';
+			 
+			               document.body.setHomePage(url);
+			 
+			        }else{
+			 
+			            alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+			 
+			        }
+			 
+
+			    }
+			 
+			</script>
+	    </div>
+	</div>
+<!-- header结束 -->
+
+<!-- 导航开始 -->
+	<div class="auto header">
+		<div class="logo fl"><a href="/index.php"><img src="img/header/lgoo.jpg" width="224" height="80"></a></div>
+        	<ul class="fr nav">
+            	<li><a href="/index.php" class="nava">首页</a></li>
+            	<li class="drop"><a href="/index.php/Solute/index.html" class="nava">解决方案</a>
+            		<div class="subnav ProWidth" style="height: auto; opacity: 0; display: none; overflow: hidden;">
+                        <div class="indexpf3">
+                            <div class="indexpf4"><a href="/index.php/Solute/show/tid/1/dhl/0.html">能效管理</a></div>
+                            <div><a href="/index.php/Solute/show/tid/1/dhl/0.html">公共建筑能效管理解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/15/dhl/0.html">医院能效管理解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/49/dhl/0.html">高校节能监管平台解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/50/dhl/0.html">工业能源管理解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/1/dhl/0.html" style="color:#336699">更多&gt;&gt;&nbsp;</a></div>
+                        </div>      
+                        <div class="indexpf3">
+                            <div class="indexpf4"><a href="/index.php/Solute/show/tid/2/dhl/1.html">安全运营</a></div>
+                            <div><a href="/index.php/Solute/show/tid/2/dhl/1.html">智能变配电</a></div>
+                            <div><a href="/index.php/Solute/show/tid/51/dhl/1.html">低压智能保护</a></div>
+                            <div><a href="/index.php/Solute/show/tid/52/dhl/1.html">数据中心</a></div>
+                            <div><a href="/index.php/Solute/show/tid/87/dhl/1.html">消防安全</a></div>
+                        	<div><a href="/index.php/Solute/show/tid/2/dhl/1.html" style="color:#336699">更多&gt;&gt;&nbsp;</a></div>
+                        </div>      
+                        <div class="indexpf3">
+                            <div class="indexpf4"><a href="/index.php/Solute/show/tid/119/dhl/2.html">专家服务</a></div>
+                            <div><a href="/index.php/Solute/show/tid/119/dhl/2.html">安全用电改造解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/117/dhl/2.html">变电站维保检测解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/116/dhl/2.html">整体代维解决方案</a></div>
+                            <div><a href="/index.php/Solute/show/tid/118/dhl/2.html">变电站智能化升级解决方案</a></div>
+                        	<div><a href="/index.php/Solute/show/tid/119/dhl/2.html" style="color:#336699">更多&gt;&gt;&nbsp;</a></div>
+                        </div>      
+                    </div>           
+            	</li>
+	            <li class="drop"><a href="/index.php/Product/index/tid/64/dhl/0.html" class="nava"> 产品中心</a>
+	            	<div class="subnav ProWidth" style=" opacity: 0; display: none; ">
+                        <div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/64/dhl/0.html">能效管理系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/64/dhl/0.html">能效管理软件</a></div>
+                            <div><a href="/index.php/Product/index/tid/65/dhl/0.html">采集装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/64/dhl/0.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                     	<div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/70/dhl/1.html">智能变配电管理系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/70/dhl/1.html">智能监控仪表</a></div>
+                            <div><a href="/index.php/Product/index/tid/66/dhl/1.html">变配电监控软件</a></div>
+                            <div><a href="/index.php/Product/index/tid/67/dhl/1.html">通讯管理机</a></div>
+                            <div><a href="/index.php/Product/index/tid/69/dhl/1.html">微机保护测控装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/71/dhl/1.html">电能表</a></div>
+                            <div><a href="/index.php/Product/index/tid/72/dhl/1.html">测控模块</a></div>
+                            <div><a href="/index.php/Product/index/tid/70/dhl/1.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                     	<div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/73/dhl/2.html">智能电能质量管理</a></div>
+                            <div><a href="/index.php/Product/index/tid/73/dhl/2.html">电能质量监测装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/74/dhl/2.html">有源滤波装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/90/dhl/2.html">谐波保护器</a></div>
+                            <div><a href="/index.php/Product/index/tid/73/dhl/2.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                     	<div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/80/dhl/3.html">低压智能保护</a></div>
+                            <div><a href="/index.php/Product/index/tid/80/dhl/3.html">低压电动机保护</a></div>
+                            <div><a href="/index.php/Product/index/tid/81/dhl/3.html">低压线路保护</a></div>
+                            <div><a href="/index.php/Product/index/tid/80/dhl/3.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                     	<div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/91/dhl/4.html">消防安全监控</a></div>
+                            <div><a href="/index.php/Product/index/tid/91/dhl/4.html">防火门监控系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/75/dhl/4.html">电气火灾监控系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/76/dhl/4.html">消防设备电源监控系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/91/dhl/4.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                     	<div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/84/dhl/5.html">智能精密配电柜系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/84/dhl/5.html">ePDU 系列智能监测装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/83/dhl/5.html">智能精密配电柜</a></div>
+                            <div><a href="/index.php/Product/index/tid/84/dhl/5.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                     	<div class="indexpf3">
+	                        <div class="indexpf4"><a href="/index.php/Product/index/tid/89/dhl/6.html">智能测温系统</a></div>
+                            <div><a href="/index.php/Product/index/tid/89/dhl/6.html">封闭母线监测装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/78/dhl/6.html">光纤光栅监测装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/79/dhl/6.html">无线测温监测装置</a></div>
+                            <div><a href="/index.php/Product/index/tid/89/dhl/6.html" style="color:#336699">更多&nbsp;</a></div>
+	                    </div>
+                    </div>
+	            </li>
+	            
+	            <li class="drop"><a href="/index.php/Caseshare/index/tid/6/dhl/0.html" class="nava">业绩展示</a>
+	                <div class="subnav soluWidth" style="height: auto; opacity: 0; display: none; overflow: hidden;">
+	                	<div class="xldh">
+	                    	<div class="xldh1">							 
+                                <div class="xldh5"><a href="/index.php/Caseshare/index/tid/6/dhl/0.html">重点项目展示</a></div>
+                                <div class="xldh5"><a href="/index.php/Caseshare/index/tid/101/dhl/1.html">应用领域业绩</a></div>
+	                        </div>
+	                        <div class="xldh4"><a href="#"><img src="img/header/dht1.jpg" width="190" height="75"></a></div>
+	                    </div>	            
+	                </div>
+	            </li>
+	            
+	            <li class="drop"><a href="/index.php/News/index.html" class="nava">新闻中心</a>
+	                <div class="subnav soluWidth" style="height: auto; opacity: 0; display: none; overflow: hidden;">
+	                	<div class="xldh">
+	                    	<div class="xldh1">
+		                        <div class="xldh5"><a href="/index.php/News/index/tid/5.html">企业新闻</a></div>
+		                        <div class="xldh5"><a href="/index.php/News/index/tid/6.html">行业动态</a></div>
+		                        <div class="xldh5"><a href="/index.php/News/index/tid/92.html">项目快讯</a></div>
+                            </div>
+	                        <div class="xldh4"><a href="/index.php/News/index.html"><img src="img/header/dht2.jpg" width="190" height="75"></a></div>
+	                    </div>	            
+	                 </div>
+	            </li>
+	            <li class="drop"><a href="/index.php/About/index.html" class="nava">关于我们</a>
+	                <div class="subnav soluWidth" style="height: auto; opacity: 0; display: none; overflow: hidden;">
+	                	<div class="xldh">
+	                    	<div class="xldh1">
+                                <div class="xldh5"><a href="/index.php/About/index/tid/7.html">公司简介</a></div>
+                                <div class="xldh5"><a href="/index.php/About/index/tid/8.html">公司荣誉</a></div>
+                                <div class="xldh5"><a href="/index.php/About/index/tid/9.html">企业文化</a></div>
+                                <div class="xldh5"><a href="/index.php/About/index/tid/11.html">企业宣传</a></div>
+                                <div class="xldh5"><a href="/index.php/About/index/tid/82.html">发展历程</a></div>
+	                        </div>
+	                        <div class="xldh4"><a href="/index.php/About/index.html"><img src="img/header/dht3.jpg" width="190" height="75"></a></div>
+	                    </div>
+                    </div>		            
+	            </li>
+	            <li class="drop"><a href="/index.php/Jobs/index.html" class="nava">人力资源</a>
+	                <div class="subnav soluWidth" style="height: auto; opacity: 0; display: none; overflow: hidden;">
+	                	<div class="xldh">
+	                    	<div class="xldh1">
+                                <div class="xldh5"><a href="/index.php/Jobs/index/tid/12.html">了解我们</a></div>
+                                <div class="xldh5"><a href="/index.php/Jobs/index/tid/13.html">员工发展</a></div>
+                                <div class="xldh5"><a href="/index.php/Jobs/index/tid/14.html">职业培训</a></div>
+                                <div class="xldh5"><a href="/index.php/Jobs/index/tid/15.html">福利待遇</a></div> 
+	                            <div class="xldh5"><a href="/index.php/Jobs/joblis/dhl/12.html">诚聘英才</a></div>
+	                            <div class="xldh5"><a href="/index.php/Jobs/feedback/dhl/13.html">留言板</a></div>  
+	                        </div>
+	                        <div class="xldh4"><a href="/index.php/Jobs/index.html"><img src="img/header/dht4.jpg" width="190" height="75"></a></div>
+	                    </div>
+	                  </div>
+	            </li>
+	        </ul>
+	</div>
+	<script type="text/javascript">
+	function dropMenu(obj){
+		$(obj).each(function(){
+			var theSpan = $(this);
+			var theMenu = theSpan.find(".subnav");
+			var tarHeight = theMenu.height();
+			theMenu.css({ height:tarHeight,opacity:0});
+			theSpan.hover(
+				function(){
+					$(this).addClass("current");
+					theMenu.stop().show().animate({ height:tarHeight,opacity:1},400);
+				},
+				function(){
+					$(this).removeClass("current");
+					theMenu.stop().animate({ height:0,opacity:0},400,function(){
+						$(this).css({ display:"none"});
+					});
+				}
+			);
+		});
+	}dropMenu(".drop");
+	</script>
+<!-- 导航结束 -->
+<!-- 栏目banner开始 -->
+	<div class="xbannerbox">
+		<div class="xbanner auto"><img src="img/header/xban02.jpg" width="1440" height="160"></div>
+	</div>
+<!-- 栏目banner结束 -->
+
+
+</body>
+</html>

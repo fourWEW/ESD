@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>应用领域业绩</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="css/guanyu.css">
+	<link rel="stylesheet" href="css/area.css">
+		<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/project-1.css">
+</head>
+
+
+<body>
+<div class="nyall zdg auto">
+	<div class="nyle fl zdg">
+	    <div class="flmdh zdg bian">
+	   <div class="lmdhbt" style=" background: url(img/btbj.jpg) no-repeat;">新闻中心</div>
+	        <ul class="dhlmt zdg">
+	       		 <li><a id="CC1_1" onclick="OpenClose1(1)" class="hoverclose">▶ 企业新闻</a></li>
+				<li><a id="CC1_2" onclick="OpenClose1(2)" class="hoverclose">▶ 行业动态</a></li>
+				<li><a id="CC1_2" onclick="OpenClose1(2)" class="hoverclose">▶ 项目快讯</a></li>
+			
+	        </ul>
+	    </div>
+		<div><a href=""><img src="img/about-call.jpg" width="213" height="44"></a></div>
+	</div>   
+	<script type="text/javascript">
+
+	var oldOpen1 = 0;
+	function OpenClose1(CID)
+	{ 
+		if (document.getElementById('C1_'+CID).style.display=="none")
+		{ 
+			if(oldOpen1 != 0){ 
+				document.getElementById('C1_'+oldOpen1).style.display = "none";
+				document.getElementById('CC1_'+oldOpen1).className = "hoverclose";
+			}
+			oldOpen1 = CID;
+			document.getElementById('C1_'+CID).style.display = "";
+			document.getElementById('CC1_'+CID).className = "hover";
+		}else{ 
+			document.getElementById('C1_'+CID).style.display = "none";
+			document.getElementById('CC1_'+CID).className = "hoverclose";
+			oldOpen1 = 0;
+		}
+
+	}
+	var oldOpen2 = 0;
+	function OpenClose2(CID)
+	{ 
+		if (document.getElementById('C2_'+CID).style.display=="none")
+		{ 
+			if(oldOpen2 != 0){ 
+				document.getElementById('C2_'+oldOpen2).style.display = "none";
+				document.getElementById('CC2_'+oldOpen2).className = "hoverclose";
+			}
+			oldOpen2 = CID;
+			document.getElementById('C2_'+CID).style.display = "";
+			document.getElementById('CC2_'+CID).className = "hover";
+		}else{ 
+			document.getElementById('C2_'+CID).style.display = "none";
+			document.getElementById('CC2_'+CID).className = "hoverclose";
+			oldOpen2 = 0;
+		}
+
+	}
+
+	var oldOpen3 = 0;
+	function OpenClose3(CID)
+	{ 
+		if (document.getElementById('C3_'+CID).style.display=="none")
+		{ 
+			if(oldOpen3 != 0){ 
+				document.getElementById('C3_'+oldOpen3).style.display = "none";
+				document.getElementById('CC3_'+oldOpen2).className = "hoverclose";
+			}
+			oldOpen3 = CID;
+			document.getElementById('C3_'+CID).style.display = "";
+			document.getElementById('CC3_'+CID).className = "hover";
+		}else{ 
+			document.getElementById('C3_'+CID).style.display = "none";
+			document.getElementById('CC3_'+CID).className = "hoverclose";
+			oldOpen3 = 0;
+		}
+
+	}
+
+	var oldOpen4 = 0;
+	function OpenClose4(CID)
+	{ 
+		if (document.getElementById('C4_'+CID).style.display=="none")
+		{ 
+			if(oldOpen4 != 0){ 
+				document.getElementById('C4_'+oldOpen4).style.display = "none";
+				document.getElementById('CC4_'+oldOpen2).className = "hoverclose";
+			}
+			oldOpen4 = CID;
+			document.getElementById('C4_'+CID).style.display = "";
+			document.getElementById('CC4_'+CID).className = "hover";
+		}else{ 
+			document.getElementById('C4_'+CID).style.display = "none";
+			document.getElementById('CC4_'+CID).className = "hoverclose";
+			oldOpen4 = 0;
+		}
+
+	}
+
+	var oldOpen5 = 0;
+	function OpenClose5(CID)
+	{ 
+		if (document.getElementById('C5_'+CID).style.display=="none")
+		{ 
+			if(oldOpen4 != 0){ 
+				document.getElementById('C5_'+oldOpen4).style.display = "none";
+				document.getElementById('CC5_'+oldOpen2).className = "hoverclose";
+			}
+			oldOpen4 = CID;
+			document.getElementById('C5_'+CID).style.display = "";
+			document.getElementById('CC5_'+CID).className = "hover";
+		}else{ 
+			document.getElementById('C5_'+CID).style.display = "none";
+			document.getElementById('CC5_'+CID).className = "hoverclose";
+			oldOpen4 = 0;
+		}
+
+	}
+
+	var oldOpen6= 0;
+	function OpenClose6(CID)
+	{ 
+		if (document.getElementById('C6_'+CID).style.display=="none")
+		{ 
+			if(oldOpen4 != 0){ 
+				document.getElementById('C6_'+oldOpen4).style.display = "none";
+				document.getElementById('CC6_'+oldOpen2).className = "hoverclose";
+			}
+			oldOpen4 = CID;
+			document.getElementById('C6_'+CID).style.display = "";
+			document.getElementById('CC6_'+CID).className = "hover";
+		}else{ 
+			document.getElementById('C6_'+CID).style.display = "none";
+			document.getElementById('CC6_'+CID).className = "hoverclose";
+			oldOpen4 = 0;
+		}
+
+	}
+
+	</script>   
+  <div class="nyri fr zdg">   
+  <div class="wzbt">
+		    <span class="wzzt">项目快讯</span>
+		    <span class="wz">您的位置：<a href="/index.php">首页</a> - <a href="">新闻中心</a> - <a>项目快讯</a></span>
+		    <div class="clear"></div>
+		</div>              		                     
+ <div class="xxnr zdg">
+   		<dl class="Nfirst">
+            <dt><img src="img/news.png" height="120"></dt>
+            <dd class="Ntitle"><a href="">易艾斯德签订安徽蚌埠医学院附属医院综合楼项目订单</a></dd>
+            <dd class="Ndate">日期：2017-07-27</dd>
+            <dd class="Nnr"></dd>
+        </dl>
+            <ul class="newslis clear">
+              <li style="background: url(img/hd.jpg) left center no-repeat;">
+                  <a href="/index.php/News/show/tid/215/dhl/3.html">
+                      <span class="fl">易艾斯德签订徐家汇中心项目订单 </span>
+                      <span class="fr">2017-06-29</span>
+                  </a>
+              </li>
+              <li style="background: url(img/hd.jpg) left center no-repeat;">
+                  <a href="/index.php/News/show/tid/212/dhl/3.html">
+                      <span class="fl">易艾斯德签订中国建设银行股份有限公司山东省分行项目订单 </span>
+                      <span class="fr">2017-05-27</span>
+                  </a>
+              </li>
+              <li style="background: url(img/hd.jpg) left center no-repeat;">
+                  <a href="/index.php/News/show/tid/211/dhl/3.html">
+                      <span class="fl">北控水务集团三大水厂能效管理系统顺利竣工 </span>
+                      <span class="fr">2017-05-12</span>
+                  </a>
+              </li>
+              <li style="background: url(img/hd.jpg) left center no-repeat;">
+                  <a href="/index.php/News/show/tid/210/dhl/3.html">
+                      <span class="fl">易艾斯德签订银川滨河新区地下管廊电气火灾监控系统 </span>
+                      <span class="fr">2017-04-20</span>
+                  </a>
+              </li>
+           </ul>
+       
+            <div class="pages"></div>
+                   
+    </div>
+
+
+
+
+   </div>
+   	<p><br></p>
+    
+       
+   </div>
+
+
+			
+	</div>
+</body>
+</html>

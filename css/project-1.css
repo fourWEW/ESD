@@ -1,0 +1,152 @@
+a{
+	font-size: 14px;
+}
+span{
+	font-size: 14px;
+}
+.nyall {
+    width: 1002px;
+    padding: 29px 0 0px 0px;
+}
+.zdg {
+    height: auto;
+    overflow: hidden;
+}
+.auto {
+    margin: 0 auto;
+}
+.nyle {
+    width: 213px;
+    min-height: 500px;
+}
+.fl {
+    float: left;
+}
+.flmdh {
+    width: 213px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.lmdhbt {
+    width: 168px;
+    height: 40px;
+    font: normal 16px "微软雅黑";
+    color: #FFF;
+    line-height: 40px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+}
+.dhlmt li a {
+    font: normal 14px "微软雅黑";
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 175px;
+    padding-left: 38px;
+    background: url(../img/lmabj.jpg) 15px center no-repeat;
+    color: #666;
+    border-bottom: 1px dashed #ccc;
+}
+.dhlmt li ul {
+    padding-top: 10px;
+}
+.dhlmt li ul li {
+    height: 32px;
+}
+.dhlmt li ul li a:hover, .dhlmt li ul li .hover {
+    background: none;
+    color: #fff;
+    background: url(../img/bj05.jpg) no-repeat;
+}
+.dhlmt li a:hover, .dhlmt li .hover {
+    color: #76a637;
+}
+.nyri {
+    width: 738px;
+    min-height: 410px;
+}
+.zdg {
+    height: auto;
+    overflow: hidden;
+}
+.zdg {
+    height: auto;
+    overflow: hidden;
+}
+.fr {
+    float: right;
+}
+.wzbt {
+    width: 738px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+}
+.wzbt span {
+    display: block;
+    line-height: 30px;
+    height: 30px;
+}
+.wzzt {
+    float: left;
+    padding: 0 11px;
+    background: url(../img/biaozhi.jpg) left center no-repeat;
+    display: block;
+    line-height: 40px;
+    font: normal 16px "微软雅黑";
+    color: #336699;
+}
+.wz {
+    float: right;
+    padding-left: 18px;
+    color: #999999;
+}
+.wz a {
+    color: #999999;
+}
+.clear {
+    clear: both;
+}
+.prolis {
+    width: 738;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.prolis li {
+    width: 212px;
+    height: 150px;
+    float: left;
+    padding: 0 16px;
+    border-right: 1px solid #ccc;
+    margin-top: 64px;
+}
+.prolis li a {
+	color: #707070;
+    display: block;
+    width: 212px;
+}
+.pages {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 0px 0;
+    clear: both;
+}
+.dhlmt li ul li a {
+    border: none;
+    font: normal 12px "微软雅黑";
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background: none;
+}
+.prolis li p {
+    width: 216px;
+    height: 30px;
+    text-align: center;
+    background: #eee;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0;
+}

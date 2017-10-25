@@ -1,0 +1,52 @@
+.auto{
+	width: 100%;
+	height: 181px;
+}
+.auto .autoBox{
+	width: 1002px;
+	height: 100%;
+	margin: 0 auto;
+}
+.auto .autoBox .back{
+	width: 1002px;
+	height: 181px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.tab{
+	width: 100%;
+	height: 181px;
+}
+.tab .tabBox{
+	width: 1002px;
+	height: 100%;
+	margin: 0 auto;
+}
+.tab .tabBox .menu{
+	height: 72px;
+	display: flex;
+	justify-content: space-between;
+}
+.tab .tabBox .menu li{
+	width: 334px;
+	height: 100%;
+	background-color: #8fc549;
+	text-align: left;
+	display: flex;
+}
+.tab .tabBox .menu li img{
+	width: 42px;
+	height: 41px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.tab .tabBox .menu li p{
+	padding-left: 99px;
+    line-height: 25px;
+    color: #fff;
+}
+.tab .tabBox .menu li .nxtitle{
+	font-size: 18px;
+}

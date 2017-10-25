@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/fuli.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+<!-- 	<link rel="shortcut icon" type="image/x-icon" href="/xlogo.ico" media="screen"> -->
+</head>
+
+
+<body>
+	<div class="big">
+
+		<div class="left">
+			<div class="lmdhbt">
+				<span>人力资源</span>
+			</div>
+			<ul>
+				<li><a href="">了解我们</a></li>
+				<li><a href="" >员工发展</a></li>
+				<li><a href="">职业培训</a></li>
+				<li><a href="">福利待遇</a></li>
+				<li><a href="">诚聘英才</a></li>
+				<li><a href="">留言板</a></li>
+			</ul>
+			<div class="concat">
+				<a href="">
+					<img src="img/about-call.jpg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="wzbt">
+				<span class="wzzt">福利待遇</span>
+				<span class="wz">  您的位置 :
+					<a href="">首页-</a>
+					<a href="">关于我们-</a>
+					<a href="">发展历程</a>
+				</span>
+			</div>
+			<div class="xxnr zdg" style="line-height: 25px;width: 708px;height: auto;overflow: hidden;padding: 15px;padding-bottom: 30px;">
+                <div class="feedtab" style="width: 500px;line-height: 2;color: #666;margin: 0 auto;font-size: 12px;">
+					<form action="/index.php/Jobs/add" method="post" name="form1" id="form1" onsubmit="return validateFrm();">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td height="50" colspan="2" align="left" style="background:url(images/dian01.jpg) repeat-x left bottom;font-size: 12px;">感谢您关注人力资源相关信息，请留下您的宝贵建议或意见。我们会尽快与您取得联系！
+如果您想应聘公司职位，可直接投简历至hr@esdtek.com或拨打电话010-62628008-8826咨询。</td>
+              </tr>
+              <tr>
+                <td height="50" align="right">&nbsp;</td>
+                <td height="50" align="left"><div class="mesbg"><span class="cored">*</span>为必填项</div></td>
+              </tr>
+              <tr>
+                <td width="16%" height="32" align="right"><p>姓名：</p></td>
+                <td width="84%" height="32">
+                  <input name="name" id="name" tip="输入汉字的姓名(必输入项)" check="2" class="feedk" reg="^[\u4E00-\u9FA5\uF900-\uFA2D]+$">
+                    <span class="cored">*</span></td>
+            </tr>
+              <tr>
+                <td height="32" align="right">留言标题：</td>
+                <td height="32">
+                  <input name="title" id="empty1" tip="标题不许为空(必输入项)" check="2" class="feedk" reg=".*\S.*">
+                <span class="cored">*</span></td>
+              </tr>
+              <tr>
+                <td height="32" align="right">电话：</td>
+                <td height="32">
+                   <input name="telephone" id="phone" tip="输入合法手机号码(必输入项)" check="2" class="feedk" reg="^(13|15|18|14)[0-9]{9}$">
+                    <span class="cored">*</span></td>
+              </tr>
+              <tr>
+                <td height="32" align="right">地址：</td>
+                <td height="32">
+                    <input name="address" id="empty3" tip="地址不许为空(必输入项)" check="2" class="feedk" reg=".*\S.*">
+                </td>
+              </tr>
+              <tr>
+                <td height="32" align="right">邮箱：</td>
+                <td height="32">
+                  <input name="email" id="mail" tip="输入合法邮件地址如:xxx@xxx.xxx(必输入项)" check="2" class="feedk" style="width:290px" reg="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$">
+                    <span class="cored">*</span></td>
+              </tr>
+             
+              <tr>
+                <td height="32" align="right">留言内容：</td>
+                <td height="32"><textarea name="content" class="feedk tooltipinputerr" id="empty2" tip="内容不许为空(必输入项)" check="2" style="width:395px; height:158px;" reg=".*\S.*"></textarea>
+                <span class="cored">*</span></td>
+              </tr>
+              <tr>
+                <td height="32" align="right">验证码：</td>
+                <td height="32"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td width="25%" height="32"><input name="verify" type="text" id="empty4" tip="验证码不许为空(必输入项)" check="2" class="feedk" style="width:90px;" reg=".*\S.*"></td>
+                      <td width="198" style="cursor:hand">
+                        <img src="/index.php/Jobs/verify/" id="verifyimg" onclick="change_verify()">
+                      </td>
+                  </tr>
+                </tbody></table></td>
+              </tr>
+              <tr>
+                <td height="32" align="right">&nbsp;</td>
+                <td height="60"><input name="input" type="submit" value="提交 " class="feedbut" style="height: 32px;background: #336699;width: 96px;cursor: pointer;border: 0;color: #FFF;font: normal 14px "微软雅黑";">
+              </td></tr>
+              <tr>
+                <td height="32" align="right">&nbsp;</td>
+                <td height="32">&nbsp;</td>
+              </tr>
+            </tbody></table>
+   </form></div>
+     
+                  
+                  
+                  
+                  
+                  
+                  </div>
+			
+			
+			
+		</div>
+	</div>
+</body>
+</html>

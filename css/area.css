@@ -2,8 +2,14 @@
 * @Author: Administrator
 * @Date:   2017-10-25 18:43:00
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-25 20:04:56
+* @Last Modified time: 2017-10-26 11:12:43
 */
+
+body {
+    font: normal 12px "微软雅黑";
+    color: #444;
+    line-height: 22px;
+}
 .xxnr {
     line-height: 25px;
     width: 708px;
@@ -12,6 +18,7 @@
     padding: 15px;
     padding-bottom: 30px;
 }
+
 .zdg {
     height: auto;
     overflow: hidden;
@@ -89,4 +96,21 @@ a {
     color: #707070;
     text-decoration: none;
     cursor: pointer;
+}
+
+.nrbtm {
+    text-align: center;
+    color: #28548c;
+    font: normal 20px "微软雅黑";
+    padding: 20px 0 30px 0;
+}
+
+.author {
+    text-align: center;
+    height: 22px;
+    background: #f1f1f1;
+    color: #999;
+    font: normal 12px "宋体";
+    line-height: 22px;
+    margin-bottom: 20px;
 }

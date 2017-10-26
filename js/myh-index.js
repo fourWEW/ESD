@@ -1,62 +1,45 @@
 'use strict';
 
 $(function(){
-
-	for(var i=0;i<1;i++){
-		slideshow(i);
-	}
-
-	function slideshow(a){
-
-		var images=$('li',$('.imgBox')[a]);
-		var bw=parseInt(getComputedStyle($('.banner')[0],null)['width']);
-		// var bw=parseInt(getStyle($('.banner')[0],'width'));
-		var banner=$('.banner')[a];
-		var list=$('li',$('.btnBox')[a]);
-
-		for(var i=1;i<images.length;i++){
-			images[i].style.left=bw+'px';
-		}
-		// Array.from(images).forEach(function(val,index){
-		// 	if(index!=0){
-		// 		val.style.left=bw+'px';
-		// 	}
-		// })
-		
-		var now=0;
-		var next=0;
-		var flag=true;
-		function move(type='l'){
-			if(!flag){
+		var banner = $('.banner');
+		var images = $('.imgBox>li');
+        var list = $('.btnBox li');   
+        var now = 0;
+        var next = 0;
+        var bw = images.innerWidth();
+        // console.log(widths);
+        images.css({left:bw + 'px'}).eq(0).css('left',0);
+        var flag = true;
+        function move(type='l'){
+        	if(!flag){
 				return;
 			}
 			flag=false;
-			if(type=='l'){
+			if(type='l'){
 				next++;
-				if(next>=images.length){
-					next=0;
-				}
-				images[now].style.left=0+'px';
-				images[next].style.left=bw+'px';
-				animate(images[now],{left:-bw},300);
-			}else if(type=='r'){
+				if(next >= images.length){
+        			next = 0;
+        		}
+        		images.eq(now).css('left',0);
+        		images.eq(next).css('left',bw + 'px');
+        		images.eq(now).animate({left:-bw}, 500);
+			}else if(type='r'){
 				next--;
-				if(next<0){
-					next=images.length-1;
-				}
-				images[now].style.left=0+'px';
-				images[next].style.left=-bw+'px';
-				animate(images[now],{left:bw},300);
+				if(next < 0){
+        			next=images.length-1;
+        		}
+        		images.eq(now).css('left',0);
+        		images.eq(next).css('left',-bw + 'px');
+        		images.eq(now).animate({left:bw}, 500);
 			}
-			animate(images[next],{left: 0},300,function(){
-				flag=true;
-			});
-			list[now].classList.remove('active');
+        	images.eq(next).animate({left:0}, 500,function(){
+        		flag = true;
+        	});
+        	list[now].classList.remove('active');
 			list[next].classList.add('active');
-			now=next;
-
-		}
-		var t=setInterval(function(){
+        	now = next;
+        }
+        var t=setInterval(function(){
 			move('l');
 		},3000)
 
@@ -81,7 +64,5 @@ $(function(){
 				}
 			}
 		})
-		
-	}
 
 })
